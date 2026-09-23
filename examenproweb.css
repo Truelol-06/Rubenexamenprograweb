@@ -1,0 +1,306 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            background-color: #F8EFEC; 
+            color: #4A403A; 
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            color: #4A403A;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.3s ease;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        ul { list-style: none; }
+        
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            border-radius: 4px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 5%;
+            background-color: #F8EFEC;
+            border-bottom: 1px solid rgba(74, 64, 58, 0.1);
+        }
+
+        .logo { 
+            font-size: 2rem; 
+            letter-spacing: -0.5px;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 40px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .header-badge {
+            background-color: #D9AEB2; 
+            color: #4A403A;
+            padding: 10px 18px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 60px 5%;
+            gap: 50px;
+        }
+
+        .hero-imagen { 
+            flex: 1.2; 
+        }
+        
+        .hero-texto {
+            flex: 1;
+        }
+
+        .etiqueta-acento {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: #896F61; /* Acento */
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .hero-texto h1 {
+            font-size: 4rem;
+            margin: 15px 0 25px;
+            line-height: 1.1;
+        }
+
+        .hero-texto p {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            max-width: 90%;
+        }
+
+        .btn-primario {
+            display: inline-block;
+            background-color: #71806C; /* Primario */
+            color: #FFF9F5; /* Superficie */
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primario:hover { 
+            background-color: #5c6858; 
+        }
+
+        .favoritos {
+            padding: 80px 5%;
+            text-align: center;
+            background-color: #FFF9F5; /* Superficie */
+        }
+
+        .favoritos h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .tarjeta-producto {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tarjeta-producto img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .tarjeta-producto h3 { 
+            margin: 10px 0 5px; 
+            font-size: 1.5rem; 
+        }
+        
+        .tarjeta-producto .desc {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #896F61; /* Acento */
+        }
+
+        .precio { 
+            font-weight: 600; 
+            margin: 15px 0 20px; 
+            font-size: 1.2rem; 
+        }
+
+        .btn-secundario {
+            background-color: #D9AEB2; 
+            color: #4A403A;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+            margin-top: auto;
+        }
+        
+        .btn-secundario:hover { 
+            background-color: #c49ba0; 
+        }
+
+        .evento-especial {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 5%;
+            background-color: #F8EFEC; /* Fondo principal */
+            gap: 40px;
+        }
+
+        .evento-imagen {
+            flex: 1;
+        }
+
+        .evento-texto {
+            flex: 1;
+            text-align: center;
+            padding: 0 40px;
+        }
+        
+        .evento-texto h2 { 
+            font-size: 3.5rem; 
+            margin: 15px 0; 
+        }
+
+        .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 5%;
+            background-color: #FFF9F5; /* Superficie */
+            gap: 50px;
+        }
+
+        .newsletter-texto { 
+            flex: 1; 
+        }
+
+        .newsletter-texto h2 { 
+            font-size: 3rem; 
+            margin-bottom: 20px; 
+            line-height: 1.2; 
+        }
+
+        .formulario-newsletter {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .formulario-newsletter input {
+            padding: 16px;
+            border: 1px solid #D9AEB2; /* Secundario */
+            background-color: transparent;
+            color: #4A403A;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+
+        .formulario-newsletter input:focus {
+            outline: none;
+            border-color: #71806C; /* Primario */
+        }
+
+        footer {
+            background-color: #71806C; /* Primario */
+            color: #FFF9F5; /* Superficie */
+            padding: 80px 5% 30px;
+        }
+
+        footer * {
+            color: #FFF9F5; /* Forzar el color de superficie en todos los hijos */
+        }
+
+        .grid-footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .grid-footer h3 { 
+            font-size: 2.2rem; 
+            margin-bottom: 10px; 
+        }
+        
+        .grid-footer h4 { 
+            margin-bottom: 25px; 
+            font-size: 1.3rem; 
+        }
+        
+        .grid-footer li { 
+            margin-bottom: 15px; 
+            font-size: 0.95rem; 
+            opacity: 0.9; 
+        }
+
+        .footer-inferior {
+            text-align: center;
+            border-top: 1px solid rgba(255, 249, 245, 0.2);
+            padding-top: 30px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        
